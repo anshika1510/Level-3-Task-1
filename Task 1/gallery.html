@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Slideshow </title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="overlay">
+    <div class="image-container">
+      <div class="slider">
+        <img src="/images/image1.jpg" class="active" alt="Image 1" onclick="enlargeImage(this)">
+        <img src="/images/image2.jpg" alt="Image 2" onclick="enlargeImage(this)">
+        <img src="/images/image3.jpg" alt="Image 3" onclick="enlargeImage(this)">
+      </div>      
+    </div>
+  </div>
+
+<!--javascript code-->
+<script>
+  let currentIndex = 0;
+  const images = document.querySelectorAll('.slider img');
+
+  function slideImages() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+  }
+
+  function enlargeImage(img) {
+    img.classList.toggle("enlarged");
+
+    // Close enlarged image when clicked again
+    img.addEventListener("click", function () {
+      img.classList.remove("enlarged");
+    });
+  }
+  setInterval(slideImages, 3000); // Change image every 3 seconds
+</script>
+
+</body>
+</html>
+
+
