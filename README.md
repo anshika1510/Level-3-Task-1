@@ -16,7 +16,7 @@
 ### 📸 Demo  
 ![App Screenshot](https://github.com/anshika1510/Level-3-Task-1/blob/main/Screenshot%20(137).png)
 ![App Screenshot](https://github.com/anshika1510/Level-3-Task-1/blob/main/Screenshot%20(139).png)
-![App Screenshot](https://github.com/anshika1510/Level-3-Task-1/blob/main/images/screenshot.png)
+![App Screenshot](https://github.com/anshika1510/Level-3-Task-1/blob/main/Screenshot%20(136).png)
 
 ### 📂 How to Use  
 1. Clone the repository:  
